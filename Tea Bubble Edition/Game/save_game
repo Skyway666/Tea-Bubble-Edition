@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<game_state>
+	<input />
+	<window />
+	<textures />
+	<audio />
+	<gui />
+	<fonts />
+	<scene s="3" s2="1" m="0" m2="0" h="0" h2="0" />
+	<map />
+	<:anonymous />
+	<entities>
+		<player x="1678.3219" y="191.47467" map="0" coins="7" points="7" lvl2coins="0" lvl2points="0" lives="3" max_punctuation="23" />
+		<enemies>
+			<air_enemy x="2313.01318" y="204" returning="false" is_idle="true" idle_speed="2" />
+			<air_enemy x="1769.01025" y="748" returning="false" is_idle="true" idle_speed="2" />
+			<ground_enemy x="1235.41016" y="1249.41931" speed_x="5" contact_x="0" contact_y="0" player_pos="1" spawned="true" is_idle="true" front_of_unwalkable="false" frames="404" time="0" just_landed="true" jumping_wall="true" jump_x="0" allow_time="true" jumping="false" />
+			<ground_enemy x="5471.74609" y="1218.41528" speed_x="5" contact_x="0" contact_y="0" player_pos="-1" spawned="true" is_idle="true" front_of_unwalkable="false" frames="404" time="0" just_landed="true" jumping_wall="true" jump_x="0" allow_time="true" jumping="false" />
+		</enemies>
+		<coins>
+			<coin id="0" />
+			<coin id="1" />
+			<coin id="2" />
+			<coin id="3" />
+			<coin id="4" />
+			<coin id="5" />
+			<coin id="6" />
+			<coin id="7" />
+			<coin id="8" />
+			<coin id="9" />
+			<coin id="10" />
+			<coin id="11" />
+			<coin id="12" />
+			<coin id="13" />
+			<coin id="14" />
+			<coin id="15" />
+			<coin id="16" />
+			<coin id="17" />
+			<coin id="18" />
+			<coin id="19" />
+			<coin id="20" />
+			<coin id="21" />
+			<coin id="22" />
+			<coin id="24" />
+			<coin id="25" />
+			<coin id="26" />
+			<coin id="27" />
+			<coin id="28" />
+			<coin id="29" />
+			<coin id="30" />
+			<coin id="31" />
+			<coin id="32" />
+			<coin id="33" />
+			<coin id="34" />
+			<coin id="35" />
+			<coin id="36" />
+			<coin id="37" />
+			<coin id="38" />
+			<coin id="39" />
+			<coin id="40" />
+			<coin id="41" />
+			<coin id="42" />
+			<coin id="43" />
+			<coin id="44" />
+			<coin id="45" />
+			<coin id="46" />
+			<coin id="48" />
+			<coin id="49" />
+			<coin id="50" />
+			<coin id="51" />
+			<coin id="52" />
+			<coin id="54" />
+			<coin id="55" />
+			<coin id="56" />
+			<coin id="57" />
+			<coin id="58" />
+			<coin id="63" />
+			<coin id="64" />
+			<coin id="65" />
+			<coin id="66" />
+			<coin id="67" />
+			<coin id="68" />
+			<coin id="69" />
+			<coin id="70" />
+			<coin id="71" />
+			<coin id="72" />
+			<coin id="73" />
+			<coin id="74" />
+			<coin id="75" />
+			<coin id="76" />
+			<coin id="77" />
+			<coin id="78" />
+			<coin id="79" />
+			<coin id="80" />
+			<coin id="81" />
+			<coin id="82" />
+			<coin id="83" />
+			<coin id="84" />
+			<coin id="85" />
+			<coin id="86" />
+			<coin id="87" />
+			<coin id="88" />
+			<coin id="89" />
+			<coin id="90" />
+			<coin id="91" />
+			<coin id="92" />
+			<coin id="93" />
+			<coin id="94" />
+			<coin id="95" />
+			<coin id="96" />
+			<coin id="97" />
+			<coin id="98" />
+			<coin id="99" />
+			<coin id="100" />
+			<coin id="101" />
+			<coin id="102" />
+			<coin id="103" />
+			<coin id="104" />
+		</coins>
+	</entities>
+	<:anonymous />
+	<transition />
+	<renderer />
+</game_state>

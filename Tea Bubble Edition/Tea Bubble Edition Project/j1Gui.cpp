@@ -34,7 +34,7 @@ bool j1Gui::Awake(pugi::xml_node& conf)
 // Called before the first frame
 bool j1Gui::Start()
 {
-	test_texture = App->tex->Load("textures/Bubble Tea Prototipo_01.png");
+	test_texture = App->tex->Load("textures/Bubble Tea_01.png");
 	return true;
 }
 

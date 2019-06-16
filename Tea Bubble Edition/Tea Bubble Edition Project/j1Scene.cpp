@@ -29,7 +29,7 @@ bool j1Scene::Start()
 	title = App->fonts->Load("fonts/open_sans/OpenSans-Bold.ttf", 50);
 	text_body = App->fonts->Load("fonts/open_sans/OpenSans-Bold.ttf", 15);
 
-	kawaii_cup = App->gui->Add_window(300, 130);
+	kawaii_cup = App->gui->Add_window(400, 130);
 	return true;
 }
 

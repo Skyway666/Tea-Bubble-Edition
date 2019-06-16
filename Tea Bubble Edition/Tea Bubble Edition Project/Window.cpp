@@ -10,7 +10,7 @@ Window::Window(int x, int y): Ui_element(x, y)
 	Idle.PushBack({ 140,1522,449,483 });
 	Idle.loop = false;
 
-	collider = App->gui->click_manager->Add_ui_collider({ x,y,324,467 });
+	collider = App->gui->click_manager->Add_ui_collider({ x,y,250,250});
 	animation = &Idle;
 	type = WINDOW;
 }

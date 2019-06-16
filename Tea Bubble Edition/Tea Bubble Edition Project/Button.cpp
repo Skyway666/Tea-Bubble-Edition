@@ -5,9 +5,6 @@
 #include "j1App.h"
 #include "p2Log.h"
 #include "j1Map.h"
-#include "Pathfinding.h"
-#include "j1Entities.h"
-#include "Pathfinding.h"
 #include "j1Audio.h"
 
 

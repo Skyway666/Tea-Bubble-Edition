@@ -86,7 +86,7 @@ void ClickManager::DebugDraw()
 	{
 		if (colliders[i] != nullptr && colliders[i]->active) //Skip empty colliders
 		{
-			App->render->DrawQuad(colliders[i]->rect, 0, 255, 0, 255,false, false);
+			App->render->DrawQuad(colliders[i]->rect, 0, 255, 0, 150,true, false);
 		}
 	}
 }

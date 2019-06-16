@@ -10,7 +10,7 @@ Window::Window(int x, int y): Ui_element(x, y)
 	Idle.PushBack({ 140,1522,449,483 });
 	Idle.loop = false;
 
-	collider = App->gui->click_manager->Add_ui_collider({ x,y,449,100 });
+	collider = App->gui->click_manager->Add_ui_collider({ x,y,324,467 });
 	animation = &Idle;
 	type = WINDOW;
 }
@@ -26,6 +26,7 @@ void Window::Update()
 	iPoint mouse_position;
 	App->input->GetMousePosition(mouse_position.x, mouse_position.y);
 	iPoint mouse_displacement;
+
 	if (gripped && !mouse_pos_gotten)
 	{
 		mouse_pos_when_grip = mouse_position;

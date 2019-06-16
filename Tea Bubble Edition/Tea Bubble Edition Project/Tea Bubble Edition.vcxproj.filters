@@ -34,29 +34,11 @@
     <ClCompile Include="j1Map.cpp">
       <Filter>Modules, scenes and tools\Modules</Filter>
     </ClCompile>
-    <ClCompile Include="j1Collisions.cpp">
-      <Filter>Modules, scenes and tools\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="Pathfinding.cpp">
-      <Filter>Modules, scenes and tools\Tools</Filter>
-    </ClCompile>
-    <ClCompile Include="j1Entities.cpp">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem</Filter>
-    </ClCompile>
-    <ClCompile Include="Entity.cpp">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities</Filter>
-    </ClCompile>
     <ClCompile Include="j1PerfTimer.cpp">
       <Filter>Modules, scenes and tools\Tools</Filter>
     </ClCompile>
     <ClCompile Include="j1Timer.cpp">
       <Filter>Modules, scenes and tools\Tools</Filter>
-    </ClCompile>
-    <ClCompile Include="GroundEntity.cpp">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities\Ground Enemies / Player</Filter>
-    </ClCompile>
-    <ClCompile Include="AirEnemy.cpp">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities\Air Enemies</Filter>
     </ClCompile>
     <ClCompile Include="j1Gui.cpp">
       <Filter>Modules, scenes and tools\Modules\GUI</Filter>
@@ -81,15 +63,6 @@
     </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\Window</Filter>
-    </ClCompile>
-    <ClCompile Include="GroundEnemy.cpp">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities\Ground Enemies / Player</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities\Ground Enemies / Player</Filter>
-    </ClCompile>
-    <ClCompile Include="Coins.cpp">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities\Collectables</Filter>
     </ClCompile>
     <ClCompile Include="StatBar.cpp">
       <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\StatsBar</Filter>
@@ -150,35 +123,17 @@
     <ClInclude Include="j1Map.h">
       <Filter>Modules, scenes and tools\Modules</Filter>
     </ClInclude>
-    <ClInclude Include="j1Collisions.h">
-      <Filter>Modules, scenes and tools\Modules</Filter>
-    </ClInclude>
     <ClInclude Include="Animation.h">
       <Filter>Modules, scenes and tools</Filter>
     </ClInclude>
-    <ClInclude Include="Pathfinding.h">
-      <Filter>Modules, scenes and tools\Tools</Filter>
-    </ClInclude>
     <ClInclude Include="p2PQueue.h">
       <Filter>p2 libraries</Filter>
-    </ClInclude>
-    <ClInclude Include="j1Entities.h">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem</Filter>
-    </ClInclude>
-    <ClInclude Include="Entity.h">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities</Filter>
     </ClInclude>
     <ClInclude Include="j1PerfTimer.h">
       <Filter>Modules, scenes and tools\Tools</Filter>
     </ClInclude>
     <ClInclude Include="j1Timer.h">
       <Filter>Modules, scenes and tools\Tools</Filter>
-    </ClInclude>
-    <ClInclude Include="GroundEntity.h">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities\Ground Enemies / Player</Filter>
-    </ClInclude>
-    <ClInclude Include="AirEnemy.h">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities\Air Enemies</Filter>
     </ClInclude>
     <ClInclude Include="Chronometer.h">
       <Filter>Modules, scenes and tools\Tools</Filter>
@@ -207,15 +162,6 @@
     <ClInclude Include="Window.h">
       <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\Window</Filter>
     </ClInclude>
-    <ClInclude Include="GroundEnemy.h">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities\Ground Enemies / Player</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities\Ground Enemies / Player</Filter>
-    </ClInclude>
-    <ClInclude Include="Coins.h">
-      <Filter>Modules, scenes and tools\Modules\EntitySystem\Entities\Collectables</Filter>
-    </ClInclude>
     <ClInclude Include="StatBar.h">
       <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\StatsBar</Filter>
     </ClInclude>
@@ -242,12 +188,6 @@
     <Filter Include="Modules, scenes and tools\Modules">
       <UniqueIdentifier>{244722d1-90ce-423d-8e7a-556211865a32}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\EntitySystem">
-      <UniqueIdentifier>{3440bd59-782f-4c6f-8d91-6eef3d3b2091}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\EntitySystem\Entities">
-      <UniqueIdentifier>{582c0144-da82-47f7-8799-3232d36e2297}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Modules, scenes and tools\Modules\GUI">
       <UniqueIdentifier>{f52125fe-bf2a-45f7-b338-434c28739893}</UniqueIdentifier>
     </Filter>
@@ -271,15 +211,6 @@
     </Filter>
     <Filter Include="Modules, scenes and tools\Modules\GUI\Ui elements\Window">
       <UniqueIdentifier>{81b5787b-fd33-4887-b34e-d47cd422cc8f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\EntitySystem\Entities\Air Enemies">
-      <UniqueIdentifier>{124a1e60-5ad3-4da0-b293-7ddacde8e457}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\EntitySystem\Entities\Ground Enemies / Player">
-      <UniqueIdentifier>{8db70416-8f45-4421-9d35-90a3dbb82085}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\EntitySystem\Entities\Collectables">
-      <UniqueIdentifier>{40012ef2-f36a-4e8e-9a0f-1d52e71f7740}</UniqueIdentifier>
     </Filter>
     <Filter Include="Modules, scenes and tools\Modules\GUI\Ui elements\StatsBar">
       <UniqueIdentifier>{09894756-2d9c-4841-b64f-afacdc2e89a7}</UniqueIdentifier>

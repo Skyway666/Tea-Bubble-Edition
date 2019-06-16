@@ -11,12 +11,8 @@
 #include "j1Scene.h"
 #include "j1Map.h"
 #include "j1App.h"
-#include "j1Collisions.h"
-#include "j1Entities.h"
-#include "Pathfinding.h"
 #include "j1Gui.h"
 #include "j1Fonts.h"
-#include "Player.h"
 #include "j1Transition.h"
 
 #include "Brofiler/Brofiler.h"
@@ -35,10 +31,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	tex = new j1Textures();
 	audio = new j1Audio();
 	scene = new j1Scene();
-	map = new j1Map();
-	collision = new j1Collisions();
-	entities = new j1Entities();
-	pathfinding = new Pathfinding();
+	//map = new j1Map();
 	gui = new j1Gui();
 	fonts = new j1Fonts();
 	transition = new j1Transition();
@@ -51,10 +44,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	AddModule(gui);
 	AddModule(fonts);
 	AddModule(scene);
-	AddModule(map);
-	AddModule(collision);
-	AddModule(entities);
-	AddModule(pathfinding);
+	//AddModule(map);
 	AddModule(transition);
 
 	//Render allways last
@@ -164,9 +154,6 @@ bool j1App::Update()
 	bool ret = true;
 	PrepareUpdate();
 
-	if (started)
-		Pause();
-
 	if(input->GetWindowEvent(WE_QUIT) == true)
 		ret = false;
 
@@ -244,10 +231,7 @@ void j1App::FinishUpdate()
 	float seconds_since_startup = startup_time.ReadSec();
 	uint32 last_frame_ms = frame_time.ReadMs();
 	uint32 frames_on_last_update = prev_last_sec_frame_count;
-	static char title[256];
-	sprintf_s(title, 256, "Who let the dog jump? | FPS: %i | Av. FPS: %.2f | Last Frame Ms: %02u | cap to %i FPS: %s | Vsync: %s ",
-		frames_on_last_update, avg_fps, last_frame_ms, config_framerate_cap, cap, Vsync);
-	App->win->SetTitle(title);
+	App->win->SetTitle(title.GetString());
 
 	timer.Start();
 
@@ -458,23 +442,4 @@ bool j1App::SavegameNow() const
 	data.reset();
 	want_to_save = false;
 	return ret;
-}
-
-void j1App::Pause()
-{
-	if (input->GetKey(SDL_SCANCODE_P) == KEY_DOWN && !pause && App->map->map_loaded)
-		pause = true;
-	else if (input->GetKey(SDL_SCANCODE_P) == KEY_DOWN && pause && App->map->map_loaded)
-		pause = false;
-
-	if (!pause)
-	{
-		tex->active = true;
-		collision->active = true;
-	}
-	else
-	{
-		tex->active = false;
-		collision->active = false;
-	}
 }

@@ -7,7 +7,6 @@
 #include "j1Input.h"
 #include "j1Gui.h"
 #include "ClickManager.h"
-#include "j1Collisions.h"
 //This structure contains a pointer to a text and its offset. Its only use is to be passed to the icon or button constructor in order to have a text
 //linked to it
 
@@ -28,9 +27,6 @@ bool j1Gui::Awake(pugi::xml_node& conf)
 	LOG("Loading GUI atlas");
 	bool ret = true;
 
-	atlas_file_name = conf.child("atlas").attribute("file").as_string("");
-	atlas2_file_name = conf.child("atlas2").attribute("file").as_string("");
-	HUD_file_name = conf.child("HUD").attribute("file").as_string("");
 
 	return ret;
 }
@@ -38,11 +34,7 @@ bool j1Gui::Awake(pugi::xml_node& conf)
 // Called before the first frame
 bool j1Gui::Start()
 {
-	atlas = App->tex->Load(atlas_file_name.GetString());
-	atlas2 = App->tex->Load(atlas2_file_name.GetString());
-	HUD = App->tex->Load(HUD_file_name.GetString());
-	
-
+	test_texture = App->tex->Load("textures/yo.png");
 	return true;
 }
 
@@ -105,26 +97,24 @@ bool j1Gui::Update(float dt)
 // Draw of all ui_elements and background will be executed here
 bool j1Gui::PostUpdate()
 {
-		if(current_background != nullptr)
-		App->render->Blit(current_background, 0, 0,1,false);
 	
 		//Blit all windows
 		for (uint i = 0; i < windows.count(); ++i)
 		{
 			if (windows[i] != nullptr && windows[i]->active)
-				windows[i]->Draw(HUD);
+				windows[i]->Draw(test_texture);
 		}
 		//Blit all icons (Maybe they should be able to blit from their own texture like texts)
 		for (uint i = 0; i < icons.count(); ++i)
 		{
 			if (icons[i] != nullptr && icons[i]->active)
-				icons[i]->Draw(HUD, icons[i]->scale);
+				icons[i]->Draw(test_texture, icons[i]->scale);
 		}
 		//Blit all buttons
 		for (uint i = 0; i < buttons.count(); ++i)
 		{
 			if (buttons[i] != nullptr && buttons[i]->active)
-				buttons[i]->Draw(atlas2);
+				buttons[i]->Draw(test_texture);
 		}
 		//Blit all statbars
 		for (uint i = 0; i < statbars.count(); ++i)
@@ -187,11 +177,6 @@ StatBar* j1Gui::Add_StatBar(int x, int y, int w, int h, float* variable,float va
 	statbars.add(new_statbar);
 
 	return new_statbar;
-}
-
-void j1Gui::Set_backgrond(SDL_Texture* new_background)
-{
-	current_background = new_background;
 }
 
 //This method will iterate over all the colliders of the buttons in the "buttons" list, looking for the one that has the same collider that the one given to the 
@@ -363,18 +348,5 @@ bool j1Gui::Erase_Ui_element(Ui_element* element)
 
 	return false;
 }
-
-// const getter for atlas
-const SDL_Texture* j1Gui::GetAtlas() const
-{
-	return atlas;
-}
-
-// const getter for HUD
-const SDL_Texture* j1Gui::GetHUD() const
-{
-	return HUD;
-}
-
 // class Gui ---------------------------------------------------
 

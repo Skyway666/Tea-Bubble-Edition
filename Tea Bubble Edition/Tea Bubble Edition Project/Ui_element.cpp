@@ -27,7 +27,7 @@ void Ui_element::Draw(SDL_Texture* sprite, float scale)
 
 	if (animation != nullptr)
 	{
-		App->render->Blit(sprite, position.x, position.y, scale, false, &(animation->GetCurrentFrame()));
+		App->render->Blit(sprite, position.x, position.y, scale, false, nullptr/*&(animation->GetCurrentFrame())*/);
 	}
 }
 

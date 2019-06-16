@@ -16,10 +16,6 @@ class j1Textures;
 class j1Audio;
 class j1Scene;
 class j1Map;
-class j1Collisions;
-class j1Player;
-class j1Entities;
-class Pathfinding;
 class j1Gui;
 class j1Fonts;
 class j1Transition;
@@ -57,7 +53,6 @@ public:
 
 	void LoadGame();
 	void SaveGame() const;
-	void Pause();
 
 private:
 
@@ -93,9 +88,6 @@ public:
 	j1Audio*			audio = nullptr;
 	j1Scene*			scene = nullptr;
 	j1Map*				map = nullptr;
-	j1Collisions*		collision = nullptr;
-	j1Entities*			entities = nullptr;
-	Pathfinding*        pathfinding = nullptr;
 	j1Gui*				gui = nullptr;
 	j1Fonts*			fonts = nullptr;
 	j1Transition*       transition = nullptr;

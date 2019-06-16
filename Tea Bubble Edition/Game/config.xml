@@ -1,43 +1,14 @@
 <!-- Config file for the game -->
 
 <config>
-  <app framerate_cap="30">
-    <title>Who let the dog jump?</title>
+  <app framerate_cap="60">
+    <title>Tea: Bubble Edition</title>
     <organization>UPC</organization>
   </app>
 	
   <renderer>
     <vsync value="true"/>
   </renderer>
-  
-  <entities>
-    <player>
-      <jump_time value =" 25"/>
-      <slide_time value =" 30"/>
-      <walljump_time value =" 30"/>
-      <speed_modifier.y value =" 18"/>
-      <speed_modifier.x value =" 10"/>
-      <walljump_speed.y value =" 15"/>
-      <walljump_speed.x value =" 10"/>
-      <gravity value =" 6"/>   
-      <pathfinding_distance.x value =" 6"/>
-      <pathfinding_distance.y value =" 4"/>
-    </player>
-    <ground_enemy>
-      <gravity value ="6"/>
-      <jump_time value =" 25"/>
-      <Genemy_speed_modifier.x value ="5"/>
-      <Genemy_speed_modifier.y value =" 20"/>
-    </ground_enemy>
-    <air_enemy>
-      <side_fly_time value ="2"/>
-      <agro_distance value ="4"/>
-      <tired_distance value ="10"/>
-      <idle_speed value ="2"/>
-      <speed_modifier.x value ="4"/>
-      <speed_modifier.y value ="4"/>
-    </air_enemy>
-  </entities>
   
   <window>
     <resolution width="1024" height="768" scale="1"/>

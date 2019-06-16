@@ -81,26 +81,11 @@ public:
 	//This method will iterate over all the colliders of the icons in the "ui_elements" list, looking for the one that has the same collider that the 
 	//one given to the function. Then it will call the global "OnClick" method and "OnClick" method of the UI element, which will change the label.
 	void OnMouseEvent_caller(Ui_collider* c1, UI_EVENT event);
-
-	//Sets a background out of the passed texture
-	void Set_backgrond(SDL_Texture* texture);
-
-	const SDL_Texture* GetAtlas() const;
-	const SDL_Texture* GetHUD() const;
 	
 	ClickManager* click_manager;
 private:
 
-	SDL_Texture* atlas;
-	SDL_Texture* atlas2;
-	SDL_Texture* HUD;
-	//Background image
-	SDL_Texture* current_background; 
-
-	//Paths to load assets
-	p2SString atlas_file_name;
-	p2SString atlas2_file_name;
-	p2SString HUD_file_name;
+	SDL_Texture* test_texture = nullptr;
 
 	
 	//Icons list

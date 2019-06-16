@@ -4,10 +4,7 @@
 #include "j1Render.h"
 #include "j1Textures.h"
 #include "j1Map.h"
-#include "j1Collisions.h"
 #include <math.h>
-#include "j1Entities.h"
-#include "Player.h"
 
 j1Map::j1Map() : j1Module(), map_loaded(false)
 {
@@ -36,112 +33,10 @@ bool j1Map::Awake(pugi::xml_node& config)
 	return ret;
 }
 
-void j1Map::CreateCollidersAndEnemies()
-{
-	int counter = 0;
-	int coin_counter = 0;
-	
-
-		uint height = 0; // Used to calculate wall tile height
-
-		while (counter < data.layer_array.At(1)->data->height * data.layer_array.At(1)->data->width)
-		{
-			int id = data.layer_array.At(1)->data->data[counter];
-			int x = counter; 
-			int y = data.layer_array.At(1)->data->width;
-			Get_coordinates_from_id(&x, &y);
-
-			//Now, x and y are the coordinates of the tileset
-			
-			MapToWorld(&x, &y);
-
-			uint lenght = 1; // Used to calculate pit lenght
-			uint column_height = 1; // Used to calculate total wall height
-
-			if (counter % data.width == 0)
-				height++;
-
-			//Now they are in pixels
-			if (id == 11)
-			{ 
-				if (data.layer_array.At(1)->data->data != nullptr)
-				{
-						for (uint i = 1; y - data.tile_height * i > 0 && i < data.height; i++)
-						{
-							int c = counter - data.width * i;
-
-							if (c > 0)
-							{
-								if (data.layer_array.At(1)->data->data[counter - data.width * i] == 11)
-									column_height++;
-								else
-									break;
-							}
-						}
-						for (uint i = 1; y + data.tile_height * i < data.tile_height * data.height && i < data.height; i++)
-						{
-							int c = counter + data.width * i;
-							if (c < (data.width * data.height))
-							{
-								if (data.layer_array.At(1)->data->data[counter + data.width * i] == 11)
-									column_height++;
-								else
-									break;
-							}
-						}
-
-				}
-
-				App->collision->AddCollider({ x, y, data.tilesets.At(0)->data->tile_width, data.tilesets.At(0)->data->tile_height }, COLLIDER_WALL, (j1Module*)nullptr, 1, height, column_height);
-
-				if (data.layer_array.At(1)->data->data != nullptr && y != 0 && data.layer_array.At(1)->data->data[counter - data.width] != 11) // Set Walkable areas
-					App->collision->AddCollider({ x, y - data.tilesets.At(0)->data->tile_height, data.tilesets.At(0)->data->tile_width, data.tilesets.At(0)->data->tile_height }, COLLIDER_WALKABLE);
-			}
-			else if (id == 12)
-			{
-				App->collision->AddCollider({ x, y, data.tilesets.At(0)->data->tile_width, data.tilesets.At(0)->data->tile_height }, COLLIDER_DEADLY);
-			}
-			else if (id == 23)
-			{
-				for (uint i = 1; data.layer_array.At(1)->data->data[counter - i] == 23; i++)
-					lenght++;
-				for (uint i = 1; data.layer_array.At(1)->data->data[counter + i] == 23; i++)
-					lenght++;
-				
-				App->collision->AddCollider({ x, y, data.tilesets.At(0)->data->tile_width, data.tilesets.At(0)->data->tile_height }, COLLIDER_PIT, (j1Module*)nullptr, lenght);
-			}
-			else if (id == 19)
-			{
-				App->entities->Add_waiting_entity(ENTITY_TYPES::AIR_ENEMY, x, y);
-			}
-			else if (id == 21)
-			{
-				App->entities->Add_waiting_entity(ENTITY_TYPES::GROUND_ENEMY, x, y);
-			}
-			else if (id == 20)
-			{
-				coin_counter++;
-				App->entities->Add_waiting_entity(ENTITY_TYPES::COIN, x, y - data.tile_height);
-
-			}
-			counter++;
-		}
-
-		App->collision->AddCollider({ data.bone_position.x, data.bone_position.y,bone_animation.GetCurrentFrame().w, bone_animation.GetCurrentFrame().h }, COLLIDER_BONE);
-}
-
 void j1Map::Draw()
 {
 	if (map_loaded == false)
 		return;
-
-	Player* player = (Player*)App->entities->player;
-	//Blit background
-     App->render->Blit(data.background_image, data.background_offset.x - player->player_x_displacement * data.parallax_speed, data.background_offset.y);
-
-
-	//Blit bone
-	 App->render->Blit(bone_graphics, data.bone_position.x, data.bone_position.y, 1 ,true, &bone_animation.GetCurrentFrame());
 
 
 	int counter = 0;
@@ -318,12 +213,6 @@ bool j1Map::Load(const char* file_name)
 			item_layer = item_layer->next;
 		}
 	}
-
-	if (ret = true)
-	{
-		CreateCollidersAndEnemies();
-	}
-
 	
 
 	map_loaded = ret;

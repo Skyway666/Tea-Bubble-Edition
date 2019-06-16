@@ -61,7 +61,7 @@ bool j1Audio::Awake(pugi::xml_node& config)
 	menu_music_file_name = config.child("menu_music").attribute("file").as_string("");
 	game_music_file_name = config.child("game_music").attribute("file").as_string("");
 
-	PlayMusic(menu_music_file_name.GetString());
+	//PlayMusic(menu_music_file_name.GetString());
 
 
 	music_volume = MIX_MAX_VOLUME;

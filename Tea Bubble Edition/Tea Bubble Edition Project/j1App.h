@@ -126,7 +126,6 @@ private:
 public:
 
 	uint	framerate_cap = 30;
-	uint	config_framerate_cap;
 	char*	Vsync = "On";
 	char*	cap = "On";
 	bool	pause = false;

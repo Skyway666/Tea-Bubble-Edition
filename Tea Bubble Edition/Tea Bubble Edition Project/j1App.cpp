@@ -106,7 +106,7 @@ bool j1App::Awake()
 		app_config = config.child("app");
 		title.create(app_config.child("title").child_value());
 		organization.create(app_config.child("organization").child_value());
-		config_framerate_cap = app_config.attribute("framerate_cap").as_uint();
+		framerate_cap = app_config.attribute("framerate_cap").as_uint();
 	}
 
 	if(ret == true)

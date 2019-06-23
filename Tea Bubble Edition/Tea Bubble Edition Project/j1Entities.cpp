@@ -80,3 +80,15 @@ StaticEntity* j1Entities::CreateStaticEntity(STATIC_ELEMENT_TYPE element) {
 	static_entities.add(new_entity);
 	return new_entity;
 }
+
+void j1Entities::PlayerEvent(PLAYER_EVENT event) {
+
+	// From player, get "hovered_enitity", and call right function depending on the event
+	
+	switch (event) {
+		case GRIP:
+			
+			break;
+		//...
+	}
+}

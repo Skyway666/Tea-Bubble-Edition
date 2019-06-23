@@ -4,10 +4,19 @@
 #include "Animation.h"
 #include "p2Point.h"
 
+class StaticEntity;
+
 
 enum OBJECT_TYPE {
 	EMPTY_CUP,
 	NONE_OBJECT_TYPE
+};
+
+enum PLAYER_EVENT {
+	GRIP,
+	RELEASE,
+	HOVER,
+	UNHOVER
 };
 class Object {
 public:
@@ -28,6 +37,8 @@ public:
 	void Update();
 	void Draw(SDL_Texture*, float scale = 1);
 	void DebugDraw();
+
+	StaticEntity* hovered_object = nullptr;
 
 private:
 

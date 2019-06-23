@@ -30,6 +30,8 @@ public:
 
 	bool debug_draw = true;
 
+	void PlayerEvent(PLAYER_EVENT event);
+
 private:
 	Player* player = nullptr;
 	p2List<StaticEntity*> static_entities;

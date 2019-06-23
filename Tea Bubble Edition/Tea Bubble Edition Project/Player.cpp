@@ -3,6 +3,8 @@
 #include "j1App.h"
 #include "j1Input.h"
 
+#include"StaticEntity.h"
+
 
 Player::Player() {
 }
@@ -15,6 +17,9 @@ void Player::Update() {
 
 	// The player is the mouse
 	App->input->GetMousePosition(position.x, position.y);
+
+	// Manage hovered object iterating "StaticEntities" list
+	// Call "Player events"
 }
 
 void Player::Draw(SDL_Texture* draw_tex, float scale) {

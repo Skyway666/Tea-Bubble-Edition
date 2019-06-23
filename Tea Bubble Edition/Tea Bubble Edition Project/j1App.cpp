@@ -14,6 +14,7 @@
 #include "j1Gui.h"
 #include "j1Fonts.h"
 #include "j1Transition.h"
+#include "j1Entities.h"
 
 #include "Brofiler/Brofiler.h"
 
@@ -35,6 +36,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	gui = new j1Gui();
 	fonts = new j1Fonts();
 	transition = new j1Transition();
+	entities = new j1Entities();
 
 
 	AddModule(input);
@@ -46,6 +48,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	AddModule(scene);
 	//AddModule(map);
 	AddModule(transition);
+	AddModule(entities);
 
 	//Render allways last
 	AddModule(render);

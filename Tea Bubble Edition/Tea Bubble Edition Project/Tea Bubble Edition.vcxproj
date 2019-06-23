@@ -87,7 +87,9 @@
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="ClickManager.cpp" />
+    <ClCompile Include="CupDispenser.cpp" />
     <ClCompile Include="Icon.cpp" />
+    <ClCompile Include="j1Entities.cpp" />
     <ClCompile Include="j1Fonts.cpp" />
     <ClCompile Include="j1Gui.cpp" />
     <ClCompile Include="j1Main.cpp" />
@@ -103,8 +105,10 @@
     <ClCompile Include="j1Render.cpp" />
     <ClCompile Include="j1Textures.cpp" />
     <ClCompile Include="j1Window.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="PugiXml\src\pugixml.cpp" />
     <ClCompile Include="StatBar.cpp" />
+    <ClCompile Include="StaticEntity.cpp" />
     <ClCompile Include="Text.cpp" />
     <ClCompile Include="Ui_element.cpp" />
     <ClCompile Include="Window.cpp" />
@@ -114,7 +118,9 @@
     <ClInclude Include="Button.h" />
     <ClInclude Include="Chronometer.h" />
     <ClInclude Include="ClickManager.h" />
+    <ClInclude Include="CupDispenser.h" />
     <ClInclude Include="Icon.h" />
+    <ClInclude Include="j1Entities.h" />
     <ClInclude Include="j1Fonts.h" />
     <ClInclude Include="j1Gui.h" />
     <ClInclude Include="j1PerfTimer.h" />
@@ -136,9 +142,11 @@
     <ClInclude Include="j1Textures.h" />
     <ClInclude Include="j1Window.h" />
     <ClInclude Include="p2SString.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="PugiXml\src\pugiconfig.hpp" />
     <ClInclude Include="PugiXml\src\pugixml.hpp" />
     <ClInclude Include="StatBar.h" />
+    <ClInclude Include="StaticEntity.h" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="Ui_element.h" />
     <ClInclude Include="Window.h" />

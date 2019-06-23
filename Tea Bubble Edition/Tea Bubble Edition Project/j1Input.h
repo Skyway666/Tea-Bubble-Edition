@@ -61,9 +61,6 @@ public:
 		return mouse_buttons[id - 1];
 	}
 
-	// Check if a certain window event happened
-	bool GetWindowEvent(int code);
-
 	// Get mouse / axis position
 	void GetMousePosition(int &x, int &y);
 	void GetMouseMotion(int& x, int& y);

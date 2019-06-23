@@ -10,7 +10,6 @@
 #include "PugiXml\src\pugixml.hpp"
 
 class j1App;
-struct Collider;
 enum UI_EVENT;
 class Ui_element;
 class j1Module
@@ -59,11 +58,6 @@ public:
 	virtual bool CleanUp()
 	{
 		return true;
-	}
-
-	virtual void OnCollision(Collider*, Collider*) 
-	{
-	
 	}
 
 	virtual void OnMouseEvent(UI_EVENT event, Ui_element* element)

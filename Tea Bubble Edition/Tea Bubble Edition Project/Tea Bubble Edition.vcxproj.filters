@@ -70,6 +70,18 @@
     <ClCompile Include="j1Transition.cpp">
       <Filter>Modules, scenes and tools\Modules</Filter>
     </ClCompile>
+    <ClCompile Include="j1Entities.cpp">
+      <Filter>Modules, scenes and tools\Modules\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Modules, scenes and tools\Modules\Entities\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticEntity.cpp">
+      <Filter>Modules, scenes and tools\Modules\Entities\Static Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="CupDispenser.cpp">
+      <Filter>Modules, scenes and tools\Modules\Entities\Static Entities\CupDispenser</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="j1Window.h">
@@ -168,6 +180,18 @@
     <ClInclude Include="j1Transition.h">
       <Filter>Modules, scenes and tools\Modules</Filter>
     </ClInclude>
+    <ClInclude Include="j1Entities.h">
+      <Filter>Modules, scenes and tools\Modules\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Modules, scenes and tools\Modules\Entities\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticEntity.h">
+      <Filter>Modules, scenes and tools\Modules\Entities\Static Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="CupDispenser.h">
+      <Filter>Modules, scenes and tools\Modules\Entities\Static Entities\CupDispenser</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="p2 libraries">
@@ -214,6 +238,18 @@
     </Filter>
     <Filter Include="Modules, scenes and tools\Modules\GUI\Ui elements\StatsBar">
       <UniqueIdentifier>{09894756-2d9c-4841-b64f-afacdc2e89a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules, scenes and tools\Modules\Entities">
+      <UniqueIdentifier>{dde95451-5199-498a-8583-4ba17ffc8a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules, scenes and tools\Modules\Entities\Player">
+      <UniqueIdentifier>{611e1f57-1dbb-46f9-a6fb-536ea385ce0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules, scenes and tools\Modules\Entities\Static Entities">
+      <UniqueIdentifier>{f3e05b1f-56ae-44fa-ad19-8411f146e39e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules, scenes and tools\Modules\Entities\Static Entities\CupDispenser">
+      <UniqueIdentifier>{cdbd6280-3a14-46bc-a0be-333ea906793b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

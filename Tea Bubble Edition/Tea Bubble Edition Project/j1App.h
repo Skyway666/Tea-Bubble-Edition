@@ -19,6 +19,7 @@ class j1Map;
 class j1Gui;
 class j1Fonts;
 class j1Transition;
+class j1Entities;
 
 class j1App
 {
@@ -91,6 +92,7 @@ public:
 	j1Gui*				gui = nullptr;
 	j1Fonts*			fonts = nullptr;
 	j1Transition*       transition = nullptr;
+	j1Entities*			entities = nullptr;
 
 
 private:

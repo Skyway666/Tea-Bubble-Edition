@@ -18,11 +18,7 @@ struct Ui_collider
 	}
 	bool CheckCollision(iPoint point)
 	{
-		if (point.x > rect.x && point.x < rect.x + rect.w && point.y > rect.y && point.y < rect.y + rect.h)
-		{
-			return true;
-		}
-		return false;
+		return point.x > rect.x && point.x < rect.x + rect.w && point.y > rect.y && point.y < rect.y + rect.h;
 	}
 	void SetPos(int x, int y)
 	{

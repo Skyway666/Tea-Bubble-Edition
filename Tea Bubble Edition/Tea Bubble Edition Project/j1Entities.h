@@ -28,7 +28,7 @@ public:
 	void CreatePlayer();
 	StaticEntity* CreateStaticEntity(STATIC_ELEMENT_TYPE element);
 
-	bool debug_draw = false;
+	bool debug_draw = true;
 
 private:
 	Player* player = nullptr;

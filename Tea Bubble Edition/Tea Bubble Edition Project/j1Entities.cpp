@@ -18,6 +18,7 @@ bool j1Entities::Awake(pugi::xml_node& config) {
 }
 
 bool j1Entities::Start() {
+	CreatePlayer();
 	return true;
 }
 
@@ -39,7 +40,7 @@ bool j1Entities::Update(float dt) {
 		player->Update();
 		//player->Draw();
 
-		//if (debug_draw) player[i]->DebugDraw();
+		if (debug_draw) player->DebugDraw();
 	}
 
 	return true;

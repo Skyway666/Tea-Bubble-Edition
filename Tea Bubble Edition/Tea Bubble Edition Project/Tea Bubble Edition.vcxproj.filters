@@ -2,254 +2,257 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="j1Window.cpp">
-      <Filter>Modules, scenes and tools\Modules</Filter>
+      <Filter>Modules, scenes and tools\Engine</Filter>
     </ClCompile>
     <ClCompile Include="j1Audio.cpp">
-      <Filter>Modules, scenes and tools\Modules</Filter>
+      <Filter>Modules, scenes and tools\Engine</Filter>
     </ClCompile>
     <ClCompile Include="j1App.cpp">
       <Filter>Modules, scenes and tools</Filter>
     </ClCompile>
     <ClCompile Include="j1Input.cpp">
-      <Filter>Modules, scenes and tools\Modules</Filter>
+      <Filter>Modules, scenes and tools\Engine</Filter>
     </ClCompile>
     <ClCompile Include="j1Main.cpp">
       <Filter>Modules, scenes and tools</Filter>
     </ClCompile>
     <ClCompile Include="j1Render.cpp">
-      <Filter>Modules, scenes and tools\Modules</Filter>
+      <Filter>Modules, scenes and tools\Engine</Filter>
     </ClCompile>
     <ClCompile Include="j1Textures.cpp">
-      <Filter>Modules, scenes and tools\Modules</Filter>
+      <Filter>Modules, scenes and tools\Engine</Filter>
     </ClCompile>
     <ClCompile Include="p2Log.cpp">
-      <Filter>p2 libraries</Filter>
+      <Filter>Modules, scenes and tools\Engine\p2 libraries</Filter>
     </ClCompile>
     <ClCompile Include="j1Scene.cpp">
-      <Filter>Modules, scenes and tools\Scenes</Filter>
+      <Filter>Modules, scenes and tools\Game\Scenes</Filter>
     </ClCompile>
     <ClCompile Include="PugiXml\src\pugixml.cpp">
-      <Filter>Modules, scenes and tools\Tools\PuguiXML</Filter>
+      <Filter>Modules, scenes and tools\Engine\Tools\PuguiXML</Filter>
     </ClCompile>
     <ClCompile Include="j1Map.cpp">
-      <Filter>Modules, scenes and tools\Modules</Filter>
+      <Filter>Modules, scenes and tools\Engine</Filter>
     </ClCompile>
     <ClCompile Include="j1PerfTimer.cpp">
-      <Filter>Modules, scenes and tools\Tools</Filter>
+      <Filter>Modules, scenes and tools\Engine\Tools</Filter>
     </ClCompile>
     <ClCompile Include="j1Timer.cpp">
-      <Filter>Modules, scenes and tools\Tools</Filter>
+      <Filter>Modules, scenes and tools\Engine\Tools</Filter>
     </ClCompile>
     <ClCompile Include="j1Gui.cpp">
-      <Filter>Modules, scenes and tools\Modules\GUI</Filter>
+      <Filter>Modules, scenes and tools\Engine\GUI</Filter>
     </ClCompile>
     <ClCompile Include="j1Fonts.cpp">
-      <Filter>Modules, scenes and tools\Modules\GUI\Fonts</Filter>
+      <Filter>Modules, scenes and tools\Engine\GUI\Fonts</Filter>
     </ClCompile>
     <ClCompile Include="ClickManager.cpp">
-      <Filter>Modules, scenes and tools\Modules\GUI\ClickManager</Filter>
+      <Filter>Modules, scenes and tools\Engine\GUI\ClickManager</Filter>
     </ClCompile>
     <ClCompile Include="Ui_element.cpp">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements</Filter>
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements</Filter>
     </ClCompile>
     <ClCompile Include="Icon.cpp">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\Icon</Filter>
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements\Icon</Filter>
     </ClCompile>
     <ClCompile Include="Button.cpp">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\Button</Filter>
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements\Button</Filter>
     </ClCompile>
     <ClCompile Include="Text.cpp">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\Text</Filter>
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements\Text</Filter>
     </ClCompile>
     <ClCompile Include="Window.cpp">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\Window</Filter>
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements\Window</Filter>
     </ClCompile>
     <ClCompile Include="StatBar.cpp">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\StatsBar</Filter>
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements\StatsBar</Filter>
     </ClCompile>
     <ClCompile Include="j1Transition.cpp">
-      <Filter>Modules, scenes and tools\Modules</Filter>
+      <Filter>Modules, scenes and tools\Engine</Filter>
     </ClCompile>
     <ClCompile Include="j1Entities.cpp">
-      <Filter>Modules, scenes and tools\Modules\Entities</Filter>
+      <Filter>Modules, scenes and tools\Game\Entities</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
-      <Filter>Modules, scenes and tools\Modules\Entities\Player</Filter>
+      <Filter>Modules, scenes and tools\Game\Entities\Player</Filter>
     </ClCompile>
     <ClCompile Include="StaticEntity.cpp">
-      <Filter>Modules, scenes and tools\Modules\Entities\Static Entities</Filter>
+      <Filter>Modules, scenes and tools\Game\Entities\Static Entities</Filter>
     </ClCompile>
     <ClCompile Include="CupDispenser.cpp">
-      <Filter>Modules, scenes and tools\Modules\Entities\Static Entities\CupDispenser</Filter>
+      <Filter>Modules, scenes and tools\Game\Entities\Static Entities\CupDispenser</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="j1Window.h">
-      <Filter>Modules, scenes and tools\Modules</Filter>
+      <Filter>Modules, scenes and tools\Engine</Filter>
     </ClInclude>
     <ClInclude Include="j1Audio.h">
-      <Filter>Modules, scenes and tools\Modules</Filter>
+      <Filter>Modules, scenes and tools\Engine</Filter>
     </ClInclude>
     <ClInclude Include="j1App.h">
       <Filter>Modules, scenes and tools</Filter>
     </ClInclude>
     <ClInclude Include="j1Input.h">
-      <Filter>Modules, scenes and tools\Modules</Filter>
+      <Filter>Modules, scenes and tools\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Render.h">
+      <Filter>Modules, scenes and tools\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Textures.h">
+      <Filter>Modules, scenes and tools\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="p2Defs.h">
+      <Filter>Modules, scenes and tools\Engine\p2 libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="p2List.h">
+      <Filter>Modules, scenes and tools\Engine\p2 libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="p2Log.h">
+      <Filter>Modules, scenes and tools\Engine\p2 libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="p2SString.h">
+      <Filter>Modules, scenes and tools\Engine\p2 libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="p2Point.h">
+      <Filter>Modules, scenes and tools\Engine\p2 libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="p2DynArray.h">
+      <Filter>Modules, scenes and tools\Engine\p2 libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Scene.h">
+      <Filter>Modules, scenes and tools\Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="PugiXml\src\pugiconfig.hpp">
+      <Filter>Modules, scenes and tools\Engine\Tools\PuguiXML</Filter>
+    </ClInclude>
+    <ClInclude Include="PugiXml\src\pugixml.hpp">
+      <Filter>Modules, scenes and tools\Engine\Tools\PuguiXML</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Map.h">
+      <Filter>Modules, scenes and tools\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="p2PQueue.h">
+      <Filter>Modules, scenes and tools\Engine\p2 libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="j1PerfTimer.h">
+      <Filter>Modules, scenes and tools\Engine\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Timer.h">
+      <Filter>Modules, scenes and tools\Engine\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Chronometer.h">
+      <Filter>Modules, scenes and tools\Engine\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Gui.h">
+      <Filter>Modules, scenes and tools\Engine\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Fonts.h">
+      <Filter>Modules, scenes and tools\Engine\GUI\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="ClickManager.h">
+      <Filter>Modules, scenes and tools\Engine\GUI\ClickManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui_element.h">
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Icon.h">
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements\Icon</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="StatBar.h">
+      <Filter>Modules, scenes and tools\Engine\GUI\Ui elements\StatsBar</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Transition.h">
+      <Filter>Modules, scenes and tools\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Entities.h">
+      <Filter>Modules, scenes and tools\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Modules, scenes and tools\Game\Entities\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticEntity.h">
+      <Filter>Modules, scenes and tools\Game\Entities\Static Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="CupDispenser.h">
+      <Filter>Modules, scenes and tools\Game\Entities\Static Entities\CupDispenser</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Modules, scenes and tools\Engine\Tools</Filter>
     </ClInclude>
     <ClInclude Include="j1Module.h">
       <Filter>Modules, scenes and tools</Filter>
     </ClInclude>
-    <ClInclude Include="j1Render.h">
-      <Filter>Modules, scenes and tools\Modules</Filter>
-    </ClInclude>
-    <ClInclude Include="j1Textures.h">
-      <Filter>Modules, scenes and tools\Modules</Filter>
-    </ClInclude>
-    <ClInclude Include="p2Defs.h">
-      <Filter>p2 libraries</Filter>
-    </ClInclude>
-    <ClInclude Include="p2List.h">
-      <Filter>p2 libraries</Filter>
-    </ClInclude>
-    <ClInclude Include="p2Log.h">
-      <Filter>p2 libraries</Filter>
-    </ClInclude>
-    <ClInclude Include="p2SString.h">
-      <Filter>p2 libraries</Filter>
-    </ClInclude>
-    <ClInclude Include="p2Point.h">
-      <Filter>p2 libraries</Filter>
-    </ClInclude>
-    <ClInclude Include="p2DynArray.h">
-      <Filter>p2 libraries</Filter>
-    </ClInclude>
-    <ClInclude Include="j1Scene.h">
-      <Filter>Modules, scenes and tools\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="PugiXml\src\pugiconfig.hpp">
-      <Filter>Modules, scenes and tools\Tools\PuguiXML</Filter>
-    </ClInclude>
-    <ClInclude Include="PugiXml\src\pugixml.hpp">
-      <Filter>Modules, scenes and tools\Tools\PuguiXML</Filter>
-    </ClInclude>
-    <ClInclude Include="j1Map.h">
-      <Filter>Modules, scenes and tools\Modules</Filter>
-    </ClInclude>
-    <ClInclude Include="Animation.h">
-      <Filter>Modules, scenes and tools</Filter>
-    </ClInclude>
-    <ClInclude Include="p2PQueue.h">
-      <Filter>p2 libraries</Filter>
-    </ClInclude>
-    <ClInclude Include="j1PerfTimer.h">
-      <Filter>Modules, scenes and tools\Tools</Filter>
-    </ClInclude>
-    <ClInclude Include="j1Timer.h">
-      <Filter>Modules, scenes and tools\Tools</Filter>
-    </ClInclude>
-    <ClInclude Include="Chronometer.h">
-      <Filter>Modules, scenes and tools\Tools</Filter>
-    </ClInclude>
-    <ClInclude Include="j1Gui.h">
-      <Filter>Modules, scenes and tools\Modules\GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="j1Fonts.h">
-      <Filter>Modules, scenes and tools\Modules\GUI\Fonts</Filter>
-    </ClInclude>
-    <ClInclude Include="ClickManager.h">
-      <Filter>Modules, scenes and tools\Modules\GUI\ClickManager</Filter>
-    </ClInclude>
-    <ClInclude Include="Ui_element.h">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements</Filter>
-    </ClInclude>
-    <ClInclude Include="Icon.h">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\Icon</Filter>
-    </ClInclude>
-    <ClInclude Include="Button.h">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\Button</Filter>
-    </ClInclude>
-    <ClInclude Include="Text.h">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\Text</Filter>
-    </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\Window</Filter>
-    </ClInclude>
-    <ClInclude Include="StatBar.h">
-      <Filter>Modules, scenes and tools\Modules\GUI\Ui elements\StatsBar</Filter>
-    </ClInclude>
-    <ClInclude Include="j1Transition.h">
-      <Filter>Modules, scenes and tools\Modules</Filter>
-    </ClInclude>
-    <ClInclude Include="j1Entities.h">
-      <Filter>Modules, scenes and tools\Modules\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Modules, scenes and tools\Modules\Entities\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="StaticEntity.h">
-      <Filter>Modules, scenes and tools\Modules\Entities\Static Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="CupDispenser.h">
-      <Filter>Modules, scenes and tools\Modules\Entities\Static Entities\CupDispenser</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="p2 libraries">
-      <UniqueIdentifier>{a8bfab6a-5472-4969-943e-861a8b493f08}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Modules, scenes and tools">
       <UniqueIdentifier>{cb944693-b9d0-484c-bad2-02d5a7cdbec6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Tools">
-      <UniqueIdentifier>{42c748be-4a37-49de-970f-5be811d06b38}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Modules, scenes and tools\Tools\PuguiXML">
-      <UniqueIdentifier>{7cb78d67-17cc-45eb-af97-e2106becce7b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Modules, scenes and tools\Scenes">
-      <UniqueIdentifier>{e07660eb-d36f-4cc9-af59-324d31c2f2f6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Modules, scenes and tools\Modules">
+    <Filter Include="Modules, scenes and tools\Engine">
       <UniqueIdentifier>{244722d1-90ce-423d-8e7a-556211865a32}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\GUI">
+    <Filter Include="Modules, scenes and tools\Engine\GUI">
       <UniqueIdentifier>{f52125fe-bf2a-45f7-b338-434c28739893}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\GUI\Fonts">
+    <Filter Include="Modules, scenes and tools\Engine\GUI\Fonts">
       <UniqueIdentifier>{4c9b860c-b2fe-4c06-8741-432e6d3a8f86}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\GUI\ClickManager">
+    <Filter Include="Modules, scenes and tools\Engine\GUI\ClickManager">
       <UniqueIdentifier>{68da8132-d5f5-4d1e-9b65-f49d56a5118a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\GUI\Ui elements">
+    <Filter Include="Modules, scenes and tools\Engine\GUI\Ui elements">
       <UniqueIdentifier>{4472fdb5-2d61-4841-8da5-6a749ff745de}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\GUI\Ui elements\Icon">
+    <Filter Include="Modules, scenes and tools\Engine\GUI\Ui elements\Icon">
       <UniqueIdentifier>{a7fc6ab6-6af1-4d4f-8b4f-164a42454120}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\GUI\Ui elements\Button">
+    <Filter Include="Modules, scenes and tools\Engine\GUI\Ui elements\Button">
       <UniqueIdentifier>{126fffc1-4c30-47b0-90f8-504bc898cf8b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\GUI\Ui elements\Text">
+    <Filter Include="Modules, scenes and tools\Engine\GUI\Ui elements\Text">
       <UniqueIdentifier>{cc946534-963e-4e48-b998-9de8ebe1bbb2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\GUI\Ui elements\Window">
+    <Filter Include="Modules, scenes and tools\Engine\GUI\Ui elements\Window">
       <UniqueIdentifier>{81b5787b-fd33-4887-b34e-d47cd422cc8f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\GUI\Ui elements\StatsBar">
+    <Filter Include="Modules, scenes and tools\Engine\GUI\Ui elements\StatsBar">
       <UniqueIdentifier>{09894756-2d9c-4841-b64f-afacdc2e89a7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\Entities">
+    <Filter Include="Modules, scenes and tools\Game">
+      <UniqueIdentifier>{24523c25-48b0-4e5e-ac33-da0c687be2a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules, scenes and tools\Game\Entities">
       <UniqueIdentifier>{dde95451-5199-498a-8583-4ba17ffc8a8e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\Entities\Player">
+    <Filter Include="Modules, scenes and tools\Game\Entities\Player">
       <UniqueIdentifier>{611e1f57-1dbb-46f9-a6fb-536ea385ce0c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\Entities\Static Entities">
+    <Filter Include="Modules, scenes and tools\Game\Entities\Static Entities">
       <UniqueIdentifier>{f3e05b1f-56ae-44fa-ad19-8411f146e39e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Modules, scenes and tools\Modules\Entities\Static Entities\CupDispenser">
+    <Filter Include="Modules, scenes and tools\Game\Entities\Static Entities\CupDispenser">
       <UniqueIdentifier>{cdbd6280-3a14-46bc-a0be-333ea906793b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules, scenes and tools\Game\Scenes">
+      <UniqueIdentifier>{e07660eb-d36f-4cc9-af59-324d31c2f2f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules, scenes and tools\Engine\Tools">
+      <UniqueIdentifier>{42c748be-4a37-49de-970f-5be811d06b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules, scenes and tools\Engine\Tools\PuguiXML">
+      <UniqueIdentifier>{7cb78d67-17cc-45eb-af97-e2106becce7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules, scenes and tools\Engine\p2 libraries">
+      <UniqueIdentifier>{a8bfab6a-5472-4969-943e-861a8b493f08}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

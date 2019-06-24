@@ -26,15 +26,16 @@ public:
 	bool CleanUp();
 
 	void CreatePlayer();
-	StaticEntity* CreateStaticEntity(STATIC_ELEMENT_TYPE element);
+	StaticEntity* CreateStaticEntity(STATIC_ELEMENT_TYPE element, iPoint position);
 
-	bool debug_draw = true;
-
-	void PlayerEvent(PLAYER_EVENT event);
+	bool debug_draw = false;
 
 private:
 	Player* player = nullptr;
 	p2List<StaticEntity*> static_entities;
+
+	void ManageHover(StaticEntity* entity_check);
+	bool CheckCollision(SDL_Rect rect, iPoint point) { return point.x > rect.x && point.x < rect.x + rect.w && point.y > rect.y && point.y < rect.y + rect.h;}
 };
 
 #endif

@@ -11,7 +11,7 @@ class Player;
 class StaticEntity {
 public:
 	// Methods
-	StaticEntity();
+	StaticEntity(iPoint position);
 	~StaticEntity();	
 	virtual void Update();
 	void Draw(SDL_Texture* draw_tex, float scale = 1);

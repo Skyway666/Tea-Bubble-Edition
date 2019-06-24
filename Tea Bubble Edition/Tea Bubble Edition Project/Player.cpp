@@ -18,8 +18,18 @@ void Player::Update() {
 	// The player is the mouse
 	App->input->GetMousePosition(position.x, position.y);
 
-	// Manage hovered object iterating "StaticEntities" list
-	// Call "Player events"
+	// Call "Player events" when player clicks
+
+
+	if (App->input->GetMouseButtonDown(1) == KEY_DOWN) {
+		if (hovered_entity)
+			hovered_entity->Take(this);
+	}
+	if (App->input->GetMouseButtonDown(1) == KEY_UP) {
+		if (hovered_entity)
+			hovered_entity->Leave(this);
+		object.type = NONE_OBJECT_TYPE;
+	}
 }
 
 void Player::Draw(SDL_Texture* draw_tex, float scale) {

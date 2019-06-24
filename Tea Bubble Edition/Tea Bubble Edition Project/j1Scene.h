@@ -14,6 +14,7 @@
 #include "j1Gui.h"
 
 struct SDL_Texture;
+class CupDispenser;
 
 class j1Scene : public j1Module
 {
@@ -50,8 +51,13 @@ private:
 
 	_TTF_Font* title = nullptr;
 	_TTF_Font* text_body = nullptr;
+	// Game
+	CupDispenser* cup_dispenser = nullptr;
 
+	// UI
 	Window* kawaii_cup = nullptr;
+
+
 };
 
 #endif // __j1SCENE_H__

@@ -3,9 +3,11 @@
 class CupDispenser :
 	public StaticEntity {
 public:
-	CupDispenser();
+	CupDispenser(iPoint position);
 	~CupDispenser();
 	void Update();
+
+	void Take(Player* player);
 
 private:
 	Animation idle;

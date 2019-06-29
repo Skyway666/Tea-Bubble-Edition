@@ -1,10 +1,11 @@
 #include "j1Entities.h"
 #include "p2Log.h"
-#include "CupDispenser.h"
 #include "j1App.h"
 #include "j1Input.h"
+#include "j1Textures.h"
 
-
+#include "CupDispenser.h"
+#include "TeaDispenser.h"
 
 
 j1Entities::j1Entities(): j1Module() {
@@ -20,6 +21,9 @@ bool j1Entities::Awake(pugi::xml_node& config) {
 }
 
 bool j1Entities::Start() {
+
+	static_entities_tex = App->tex->Load("textures/Sprites_fondo.png");
+	player_tex = App->tex->Load("textures/Sprites_vaso.png");
 	CreatePlayer();
 	return true;
 }
@@ -37,7 +41,7 @@ bool j1Entities::Update(float dt) {
 	// Update entities and manage hover
 	for (uint i = 0; i < static_entities.count(); ++i) {
 		static_entities[i]->Update();
-		//static_entities[i]->Draw()
+		static_entities[i]->Draw(static_entities_tex);
 
 		if (debug_draw) static_entities[i]->DebugDraw();
 
@@ -47,7 +51,7 @@ bool j1Entities::Update(float dt) {
 	// Update Player
 	if(player){
 		player->Update();
-		//player->Draw();
+		player->Draw(player_tex);
 
 		if (debug_draw) player->DebugDraw();
 	}
@@ -80,7 +84,7 @@ StaticEntity* j1Entities::CreateStaticEntity(STATIC_ELEMENT_TYPE element, iPoint
 			new_entity = new CupDispenser(position);
 			break;
 		case TEA_DISPENSER:
-			// Create child of Static Entity
+			new_entity = new TeaDispenser(position);
 			break;
 		case CONDIMENT_DISPENSER:
 			// Create child of Static Entity
@@ -90,6 +94,17 @@ StaticEntity* j1Entities::CreateStaticEntity(STATIC_ELEMENT_TYPE element, iPoint
 	static_entities.add(new_entity);
 	return new_entity;
 }
+
+void j1Entities::DrawObject(iPoint position, Object object) {
+
+	switch (object.type) {
+		case EMPTY_CUP:
+			App->render->Blit(player_tex, position.x, position.y, 1, false, &(object.current_animation.GetCurrentFrame()));
+		break;
+	}
+}
+
+
 
 void j1Entities::ManageHover(StaticEntity * entity_check) {
 

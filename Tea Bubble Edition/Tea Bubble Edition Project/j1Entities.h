@@ -27,8 +27,10 @@ public:
 
 	void CreatePlayer();
 	StaticEntity* CreateStaticEntity(STATIC_ELEMENT_TYPE element, iPoint position);
+	
+	void DrawObject(iPoint position, Object object);
 
-	bool debug_draw = true;
+	bool debug_draw = false;
 
 private:
 	Player* player = nullptr;
@@ -36,6 +38,9 @@ private:
 
 	void ManageHover(StaticEntity* entity_check);
 	bool CheckCollision(SDL_Rect rect, iPoint point) { return point.x > rect.x && point.x < rect.x + rect.w && point.y > rect.y && point.y < rect.y + rect.h;}
+
+	SDL_Texture* static_entities_tex;
+	SDL_Texture* player_tex;
 };
 
 #endif

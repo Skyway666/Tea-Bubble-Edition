@@ -2,7 +2,9 @@
 #include "j1Fonts.h"
 #include "j1Transition.h"
 #include "j1Entities.h"
+
 #include "CupDispenser.h"
+#include "TeaDispenser.h"
 
 #include "Brofiler/Brofiler.h"
 
@@ -31,7 +33,8 @@ bool j1Scene::Start()
 	text_body = App->fonts->Load("fonts/open_sans/OpenSans-Bold.ttf", 15);
 
 	//kawaii_cup = App->gui->Add_window(400, 130);
-	cup_dispenser = (CupDispenser*)App->entities->CreateStaticEntity(CUP_DISPENSER, iPoint(400, 130));
+	cup_dispenser = (CupDispenser*)App->entities->CreateStaticEntity(CUP_DISPENSER, iPoint(700, 200));
+	tea_dispenser = (TeaDispenser*)App->entities->CreateStaticEntity(TEA_DISPENSER, iPoint(200, 100));
 
 	return true;
 }
@@ -70,10 +73,8 @@ bool j1Scene::CleanUp()
 
 void j1Scene::OnMouseEvent(UI_EVENT event, Ui_element* element)
 {
-	//TEST
 	if(event == MOUSE_STOP_CLICK && !App->transition->transitioning)
 	{ 
 		
 	}
-	//TEST
 }

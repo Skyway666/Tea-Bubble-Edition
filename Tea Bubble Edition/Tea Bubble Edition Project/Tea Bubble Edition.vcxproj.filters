@@ -82,6 +82,9 @@
     <ClCompile Include="CupDispenser.cpp">
       <Filter>Modules, scenes and tools\Game\Entities\Static Entities\CupDispenser</Filter>
     </ClCompile>
+    <ClCompile Include="TeaDispenser.cpp">
+      <Filter>Modules, scenes and tools\Game\Entities\Static Entities\Tea Dispenser</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="j1Window.h">
@@ -192,6 +195,9 @@
     <ClInclude Include="j1Module.h">
       <Filter>Modules, scenes and tools</Filter>
     </ClInclude>
+    <ClInclude Include="TeaDispenser.h">
+      <Filter>Modules, scenes and tools\Game\Entities\Static Entities\Tea Dispenser</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Modules, scenes and tools">
@@ -253,6 +259,9 @@
     </Filter>
     <Filter Include="Modules, scenes and tools\Engine\p2 libraries">
       <UniqueIdentifier>{a8bfab6a-5472-4969-943e-861a8b493f08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules, scenes and tools\Game\Entities\Static Entities\Tea Dispenser">
+      <UniqueIdentifier>{7d2c69b1-61f6-446a-ab80-7dbf03e6902d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

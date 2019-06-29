@@ -4,6 +4,7 @@
 #include "j1Input.h"
 
 #include"StaticEntity.h"
+#include "j1Entities.h"
 
 
 Player::Player() {
@@ -36,7 +37,10 @@ void Player::Draw(SDL_Texture* draw_tex, float scale) {
 	if (object.type == NONE_OBJECT_TYPE) 
 		return;
 
-	App->render->Blit(draw_tex, position.x, position.y, scale, false, &(object.current_animation.GetCurrentFrame()));
+	iPoint centered_pos = { object.current_animation.GetCurrentFrame().w/2, object.current_animation.GetCurrentFrame().h/2};
+	centered_pos = position - centered_pos;
+
+	App->entities->DrawObject(centered_pos, object);
 }
 
 void Player::DebugDraw() {

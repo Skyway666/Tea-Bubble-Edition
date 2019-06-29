@@ -15,6 +15,7 @@
 
 struct SDL_Texture;
 class CupDispenser;
+class TeaDispenser;
 
 class j1Scene : public j1Module
 {
@@ -53,6 +54,7 @@ private:
 	_TTF_Font* text_body = nullptr;
 	// Game
 	CupDispenser* cup_dispenser = nullptr;
+	TeaDispenser* tea_dispenser = nullptr;
 
 	// UI
 	Window* kawaii_cup = nullptr;

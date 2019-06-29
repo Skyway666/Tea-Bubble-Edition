@@ -109,6 +109,7 @@
     <ClCompile Include="PugiXml\src\pugixml.cpp" />
     <ClCompile Include="StatBar.cpp" />
     <ClCompile Include="StaticEntity.cpp" />
+    <ClCompile Include="TeaDispenser.cpp" />
     <ClCompile Include="Text.cpp" />
     <ClCompile Include="Ui_element.cpp" />
     <ClCompile Include="Window.cpp" />
@@ -147,6 +148,7 @@
     <ClInclude Include="PugiXml\src\pugixml.hpp" />
     <ClInclude Include="StatBar.h" />
     <ClInclude Include="StaticEntity.h" />
+    <ClInclude Include="TeaDispenser.h" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="Ui_element.h" />
     <ClInclude Include="Window.h" />

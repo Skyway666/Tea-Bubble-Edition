@@ -14,7 +14,7 @@ public:
 	StaticEntity(iPoint position);
 	~StaticEntity();	
 	virtual void Update();
-	void Draw(SDL_Texture* draw_tex, float scale = 1);
+	virtual void Draw(SDL_Texture* draw_tex, float scale = 1);
 
 	virtual void Take(Player* player){}
 	virtual void Leave(Player* player){}

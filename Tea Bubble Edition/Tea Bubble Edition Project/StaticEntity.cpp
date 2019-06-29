@@ -1,6 +1,7 @@
 #include "StaticEntity.h"
 #include "j1Render.h"
 #include "j1App.h"
+#include "j1Entities.h"
 
 
 
@@ -29,5 +30,22 @@ void StaticEntity::Draw(SDL_Texture* draw_tex, float scale) {
 }
 
 void StaticEntity::DebugDraw() {
-	App->render->DrawQuad(collider, 255, 255, 255, 255, true, false);
+
+	int r = 0, g = 0, b = 0, a = 0;
+
+	switch (type) {
+	case CUP_DISPENSER:
+		r = 0;
+		g = 255;
+		b = 255;
+		a = 255;
+		break;
+	case TEA_DISPENSER:
+		r = 0;
+		g = 255;
+		b = 0;
+		a = 255;
+		break;
+	}
+	App->render->DrawQuad(collider, r, g, b, a, true, false);
 }

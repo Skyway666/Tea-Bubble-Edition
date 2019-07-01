@@ -43,8 +43,9 @@ void StaticEntity::DebugDraw() {
 		break;
 	case TEA_DISPENSER_BUTTON:
 		r = 120;
-		g = 120;
-		b = 0;
+		g = 0;
+		b = 120;
+		break;
 	}
 	App->render->DrawQuad(collider, r, g, b, a, true, false);
 }

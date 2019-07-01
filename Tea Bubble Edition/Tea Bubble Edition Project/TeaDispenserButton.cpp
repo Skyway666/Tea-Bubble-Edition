@@ -1,6 +1,7 @@
 #include "TeaDispenserButton.h"
 #include "p2Point.h"
 #include "TeaDispenser.h"
+#include "j1Entities.h"
 
 
 TeaDispenserButton::TeaDispenserButton(iPoint position): StaticEntity(position) {
@@ -10,6 +11,8 @@ TeaDispenserButton::TeaDispenserButton(iPoint position): StaticEntity(position) 
 
 	idle.PushBack({ 1,1,1,1 }); // No art yet!
 	current_animation = &idle;
+
+	type = TEA_DISPENSER_BUTTON;
 }
 
 

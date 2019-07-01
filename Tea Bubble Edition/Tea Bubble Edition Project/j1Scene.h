@@ -16,6 +16,7 @@
 struct SDL_Texture;
 class CupDispenser;
 class TeaDispenser;
+class TeaDispenserButton;
 
 class j1Scene : public j1Module
 {
@@ -55,6 +56,7 @@ private:
 	// Game
 	CupDispenser* cup_dispenser = nullptr;
 	TeaDispenser* tea_dispenser = nullptr;
+	TeaDispenserButton* tea_dispenser_button = nullptr;
 
 	// UI
 	Window* kawaii_cup = nullptr;

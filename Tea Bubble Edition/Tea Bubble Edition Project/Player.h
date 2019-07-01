@@ -9,6 +9,7 @@ class StaticEntity;
 
 enum OBJECT_TYPE {
 	EMPTY_CUP,
+	TEA_FILLED_CUP,
 	NONE_OBJECT_TYPE
 };
 class Object {
@@ -34,9 +35,6 @@ public:
 	iPoint position;
 	StaticEntity* hovered_entity = nullptr;
 	Object object; // Functions will be called on the player to modify the contents of the oject
-
-
-
 };
 
 #endif

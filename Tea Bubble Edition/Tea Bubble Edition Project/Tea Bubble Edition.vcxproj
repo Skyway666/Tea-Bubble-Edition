@@ -110,6 +110,7 @@
     <ClCompile Include="StatBar.cpp" />
     <ClCompile Include="StaticEntity.cpp" />
     <ClCompile Include="TeaDispenser.cpp" />
+    <ClCompile Include="TeaDispenserButton.cpp" />
     <ClCompile Include="Text.cpp" />
     <ClCompile Include="Ui_element.cpp" />
     <ClCompile Include="Window.cpp" />
@@ -149,6 +150,7 @@
     <ClInclude Include="StatBar.h" />
     <ClInclude Include="StaticEntity.h" />
     <ClInclude Include="TeaDispenser.h" />
+    <ClInclude Include="TeaDispenserButton.h" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="Ui_element.h" />
     <ClInclude Include="Window.h" />

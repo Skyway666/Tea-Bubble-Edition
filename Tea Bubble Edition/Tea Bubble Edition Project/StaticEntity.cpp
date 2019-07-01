@@ -5,9 +5,7 @@
 
 
 
-StaticEntity::StaticEntity(iPoint position){
-	collider.x = position.x;
-	collider.y = position.y;
+StaticEntity::StaticEntity(iPoint position): position(position){
 }
 
 
@@ -21,31 +19,32 @@ void StaticEntity::Update() {
 void StaticEntity::Draw(SDL_Texture* draw_tex, float scale) {
 
 	// Blit texture with animation
-	if (current_animation) 
-		App->render->Blit(draw_tex, collider.x, collider.y, scale, false, &(current_animation->GetCurrentFrame()));
-	// Blit all the texture
-	else
-		App->render->Blit(draw_tex, collider.x, collider.y, scale, false, nullptr);
+	SDL_Rect* animation_rect = nullptr;
+	if (current_animation)
+		animation_rect = &(current_animation->GetCurrentFrame());
 
+	App->render->Blit(draw_tex, position.x, position.y, scale, false,animation_rect);
 }
 
 void StaticEntity::DebugDraw() {
 
-	int r = 0, g = 0, b = 0, a = 0;
+	int r = 0, g = 0, b = 0, a = 120;
 
 	switch (type) {
 	case CUP_DISPENSER:
 		r = 0;
 		g = 255;
 		b = 255;
-		a = 255;
 		break;
 	case TEA_DISPENSER:
 		r = 0;
 		g = 255;
 		b = 0;
-		a = 255;
 		break;
+	case TEA_DISPENSER_BUTTON:
+		r = 120;
+		g = 120;
+		b = 0;
 	}
 	App->render->DrawQuad(collider, r, g, b, a, true, false);
 }

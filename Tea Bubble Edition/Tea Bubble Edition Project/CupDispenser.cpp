@@ -6,6 +6,8 @@
 
 CupDispenser::CupDispenser(iPoint position): StaticEntity(position) {
 
+	collider.x = position.x;
+	collider.y = position.y;
 	collider.w = 200;
 	collider.h = 400;
 

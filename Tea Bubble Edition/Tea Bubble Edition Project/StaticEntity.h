@@ -11,6 +11,7 @@ class Player;
 class StaticEntity {
 public:
 	// Methods
+	StaticEntity() {};
 	StaticEntity(iPoint position);
 	~StaticEntity();	
 	virtual void Update();
@@ -24,7 +25,9 @@ public:
 	void DebugDraw();
 
 	// Variable
-	Animation* current_animation;
+
+	iPoint position;
+	Animation* current_animation = nullptr;
 	STATIC_ELEMENT_TYPE type;
 	SDL_Rect collider; // Contains position
 };

@@ -5,6 +5,7 @@
 
 #include "CupDispenser.h"
 #include "TeaDispenser.h"
+#include "TeaDispenserButton.h"
 
 #include "Brofiler/Brofiler.h"
 
@@ -35,6 +36,8 @@ bool j1Scene::Start()
 	//kawaii_cup = App->gui->Add_window(400, 130);
 	cup_dispenser = (CupDispenser*)App->entities->CreateStaticEntity(CUP_DISPENSER, iPoint(700, 200));
 	tea_dispenser = (TeaDispenser*)App->entities->CreateStaticEntity(TEA_DISPENSER, iPoint(200, 100));
+	tea_dispenser_button = (TeaDispenserButton*)App->entities->CreateStaticEntity(TEA_DISPENSER_BUTTON, iPoint(200, 100));
+	tea_dispenser_button->LinkTeaDispenser(tea_dispenser);
 
 	return true;
 }

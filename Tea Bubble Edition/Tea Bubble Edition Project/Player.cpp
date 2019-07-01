@@ -37,8 +37,8 @@ void Player::Draw(SDL_Texture* draw_tex, float scale) {
 	if (object.type == NONE_OBJECT_TYPE) 
 		return;
 
-	iPoint centered_pos = { object.current_animation.GetCurrentFrame().w/2, object.current_animation.GetCurrentFrame().h/2};
-	centered_pos = position - centered_pos;
+	iPoint half_size = { object.current_animation.GetCurrentFrame().w/2, object.current_animation.GetCurrentFrame().h/2};
+	iPoint centered_pos = position - half_size;
 
 	App->entities->DrawObject(centered_pos, object);
 }
@@ -51,20 +51,23 @@ void Player::DebugDraw() {
 	debug_rect.h = 50;
 	debug_rect.w = 50;
 
-	int r = 0, g = 0, b = 0, a = 0;
+	int r = 0, g = 0, b = 0, a = 120;
 
 	switch (object.type) {
 		case NONE_OBJECT_TYPE:
 			r = 255;
 			g = 0;
 			b = 0;
-			a = 255;
 			break;
 		case EMPTY_CUP:
 			r = 0;
 			g = 255;
 			b = 255;
-			a = 255;
+			break;
+		case TEA_FILLED_CUP:
+			r = 120;
+			g = 255;
+			b = 255;
 			break;
 	}
 

@@ -85,6 +85,9 @@
     <ClCompile Include="TeaDispenser.cpp">
       <Filter>Modules, scenes and tools\Game\Entities\Static Entities\Tea Dispenser</Filter>
     </ClCompile>
+    <ClCompile Include="TeaDispenserButton.cpp">
+      <Filter>Modules, scenes and tools\Game\Entities\Static Entities\TeaDispenserButton</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="j1Window.h">
@@ -198,6 +201,9 @@
     <ClInclude Include="TeaDispenser.h">
       <Filter>Modules, scenes and tools\Game\Entities\Static Entities\Tea Dispenser</Filter>
     </ClInclude>
+    <ClInclude Include="TeaDispenserButton.h">
+      <Filter>Modules, scenes and tools\Game\Entities\Static Entities\TeaDispenserButton</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Modules, scenes and tools">
@@ -262,6 +268,9 @@
     </Filter>
     <Filter Include="Modules, scenes and tools\Game\Entities\Static Entities\Tea Dispenser">
       <UniqueIdentifier>{7d2c69b1-61f6-446a-ab80-7dbf03e6902d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules, scenes and tools\Game\Entities\Static Entities\TeaDispenserButton">
+      <UniqueIdentifier>{f0c29944-696d-4a71-996f-f5dd02b13846}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

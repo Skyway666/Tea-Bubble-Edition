@@ -16,7 +16,6 @@ private:
 	// Animations for static object
 	Animation idle;
 	//Animation taking;
-
 	Object empty_cup;
 };
 

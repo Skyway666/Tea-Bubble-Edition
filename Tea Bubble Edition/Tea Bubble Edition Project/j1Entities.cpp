@@ -6,6 +6,7 @@
 
 #include "CupDispenser.h"
 #include "TeaDispenser.h"
+#include "TeaDispenserButton.h"
 
 
 j1Entities::j1Entities(): j1Module() {
@@ -86,8 +87,10 @@ StaticEntity* j1Entities::CreateStaticEntity(STATIC_ELEMENT_TYPE element, iPoint
 		case TEA_DISPENSER:
 			new_entity = new TeaDispenser(position);
 			break;
+		case TEA_DISPENSER_BUTTON:
+			new_entity = new TeaDispenserButton(position);
+			break;
 		case CONDIMENT_DISPENSER:
-			// Create child of Static Entity
 			break;
 	}
 
